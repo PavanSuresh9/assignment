@@ -70,24 +70,25 @@ if method =='1':
   num1=int(input("enter your first number:"))
   num2=int(input("enter your second number:"))
   result=num1+num2
-  #print("the sum of two numbers is:",num1+num2)
+  print("the sum of two numbers is:",result)
 elif method=='2':
   num1=int(input("enter your first number:"))
   num2=int(input("enter your second number:"))
   result=num1-num2
-  #print("the sub of two numbers is:",num1-num2)
+  print("the sub of two numbers is:",result)
 elif method == '3':
   num1=int(input("enter your first number:"))
   num2=int(input("enter your second number:"))
   result=num1*num2
   print(result)
-  #print("the mul of two numbers is:",num1*num2)
+  print("the mul of two numbers is:",result)
 elif method =='4':
   num1=int(input("enter your first number:"))
   num2=int(input("enter your second number:"))
   result=num1/num2
-  #print("the div of two numbers is:",num1/num2)
+  print("the div of two numbers is:",result)
 else:
   print("please choose any method")
 file=open("calculator.txt","w")
 file.write(str(result))
+file.close()
